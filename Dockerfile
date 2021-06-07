@@ -19,7 +19,7 @@ RUN apk update && apk add --no-cache \
         && echo ServerName 0.0.0.0 >> /etc/apache2/httpd.conf
 
 #Install DoukuWiki
-COPY dokuwiki.zip/var/www/localhost/htdocs
+COPY dokuwiki.zip /var/www/localhost/htdocs
 RUN cd /var/www/localhost/htdocs && unzip dokuwiki.zip && rm dokuwiki.zip index.html && chmod 777 -R /var/www/localhost/htdocs
 
 #Start Service
