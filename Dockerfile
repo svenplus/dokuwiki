@@ -4,6 +4,7 @@ RUN apk update && apk add --no-cache \
         apache2 \
         php-apache2 \
         php-curl \
+		php-json \
         php-mbstring \
         php-gd \
         php-session\
